@@ -1,0 +1,13 @@
+{
+  "name": "life-action-revival-ugly-ui",
+  "version": "1.0.0",
+  "description": "Ugliest UI demo for SCM project with lint and auto-deploy",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "echo 'Nothing to build for static site'",
+    "deploy": "echo 'Deploying via GitHub Actions...'"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
