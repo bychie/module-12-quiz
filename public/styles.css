@@ -69,7 +69,8 @@ button:hover {
   margin-top: 30px;
   font-size: 1.4rem;
   opacity: 0;
-  transition: opacity 1s ease, transform 1s ease;
+  transform: scale(0.9);
+  transition: opacity 1s ease, transform 0.8s ease;
 }
 
 footer {
