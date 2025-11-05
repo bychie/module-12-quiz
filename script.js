@@ -1,40 +1,31 @@
-// script.js
-
 window.addEventListener("load", () => {
-  // 🌸 Pastel color palette
-  const pastelColors = [
-    "#f9c5d1", // soft pink
-    "#f6eac2", // light cream
-    "#c5f9d7", // mint green
-    "#c5d8f9", // baby blue
-    "#e4c5f9", // lavender
-  ];
+  const btn = document.getElementById("magicBtn");
+  const msg = document.getElementById("cuteMsg");
 
-  let i = 0;
-
-  // 🌈 Smooth pastel background transitions
-  setInterval(() => {
-    document.body.style.transition = "background-color 2s ease-in-out";
-    document.body.style.backgroundColor = pastelColors[i];
-    i = (i + 1) % pastelColors.length;
-  }, 2500); // every 2.5 seconds
-
-  // ✨ Add aesthetic message element
-  const msg = document.createElement("div");
-  msg.textContent = "✨ Welcome to the Ugly UI Revival ✨";
-  msg.style.textAlign = "center";
-  msg.style.fontFamily = "'Poppins', sans-serif";
-  msg.style.fontSize = "1.8em";
-  msg.style.marginTop = "40px";
-  msg.style.color = "#555";
-  msg.style.textShadow = "1px 1px 3px rgba(0,0,0,0.1)";
-  msg.style.transition = "opacity 1s ease-in-out";
-  msg.style.opacity = 0;
-
-  document.body.appendChild(msg);
-
-  // 🌷 Fade in effect for the text
-  setTimeout(() => {
+  btn.addEventListener("click", () => {
+    msg.textContent = "💫 You just made the world a little cuter! 💕";
     msg.style.opacity = 1;
-  }, 1000);
+    msg.style.transform = "scale(1.2)";
+    msg.style.color = "#ff8fab";
+
+    // Floating heart animation
+    for (let i = 0; i < 15; i++) {
+      const heart = document.createElement("div");
+      heart.textContent = "💖";
+      heart.style.position = "fixed";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.bottom = "0px";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.opacity = 0.7;
+      heart.style.transition = "transform 4s linear, opacity 4s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.style.transform = `translateY(-100vh) rotate(${Math.random() * 360}deg)`;
+        heart.style.opacity = 0;
+      }, 100);
+
+      setTimeout(() => heart.remove(), 4000);
+    }
+  });
 });

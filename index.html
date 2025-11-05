@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-  <title>Life Action Revival – Ugly UI Demo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fafafa;
-      text-align: center;
-      margin: 40px;
-    }
-    img {
-      width: 80%;
-      max-width: 600px;
-      border: 5px solid red;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      max-width: 700px;
-      margin: 20px auto;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Action Revival – Ugly UI Demo (Aesthetic Edition)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Ugliest UI I've Ever Seen 😵</h1>
-  <img src="images/ugly-ui.png" alt="Ugliest UI Screenshot">
+  <header>
+    <h1>🌈 Ugly UI Revival 🌸</h1>
+    <p>Turning chaos into calm, one pastel pixel at a time ✨</p>
+  </header>
 
-  <p>
-    This interface is cluttered, inconsistent, and overwhelming. The layout lacks hierarchy and spacing, 
-    making it hard for users to focus. To improve it, I would:
-    <ul style="text-align:left; display:inline-block;">
-      <li>Use consistent fonts and colors</li>
-      <li>Add whitespace to separate sections</li>
-      <li>Follow a clear grid layout</li>
-      <li>Make navigation simple and intuitive</li>
-    </ul>
-  </p>
+  <main>
+    <section class="screenshot">
+      <img src="images/ugly-ui.png" alt="Ugliest UI Screenshot" />
+    </section>
 
-  <!-- 👇 Add these two scripts at the very end -->
+    <section class="improvement">
+      <h2>What’s wrong with it 😩</h2>
+      <ul>
+        <li>Too cluttered and overwhelming</li>
+        <li>Harsh color combinations</li>
+        <li>No clear hierarchy or spacing</li>
+        <li>Outdated fonts and no visual balance</li>
+      </ul>
+
+      <h2>How I’d make it better 🌸</h2>
+      <ul>
+        <li>Use soft pastel color palettes</li>
+        <li>Add animations and micro-interactions</li>
+        <li>Apply consistent typography and spacing</li>
+        <li>Design with modern simplicity in mind</li>
+      </ul>
+    </section>
+
+    <section class="fun-area">
+      <button id="magicBtn">💖 Click me for magic!</button>
+      <div id="cuteMsg"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for SCM CI/CD Activity • by Anne ✨</p>
+  </footer>
+
   <script src="fun.js"></script>
   <script src="script.js"></script>
 </body>
