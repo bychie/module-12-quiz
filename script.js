@@ -2,14 +2,13 @@ window.addEventListener("load", () => {
   const btn = document.getElementById("magicBtn");
   const msg = document.getElementById("cuteMsg");
 
-  if (!btn || !msg) return; // prevent errors if not found
-
   btn.addEventListener("click", () => {
     msg.textContent = "💫 You just made the world a little cuter! 💕";
     msg.style.opacity = 1;
-    msg.style.transform = "scale(1.1)";
+    msg.style.transform = "scale(1.2)";
     msg.style.color = "#ff8fab";
 
+    // Floating heart animation
     for (let i = 0; i < 15; i++) {
       const heart = document.createElement("div");
       heart.textContent = "💖";
