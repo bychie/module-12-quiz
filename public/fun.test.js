@@ -9,8 +9,4 @@ test("returns correct greeting for a given name", () => {
   expect(greet("Anne")).toBe("Hello, Anne!");
 });
 
-/// test("intentional fail to demonstrate CI blocking deploy", () => {
-//   expect(greet("Anne")).toBe("Hi, Anne!");
-// });
-
 
