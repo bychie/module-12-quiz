@@ -60,7 +60,7 @@ jobs:
       - name: Build static files
         run: |
           mkdir dist
-          cp -r public/* dist/
+          cp -a public/. dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
